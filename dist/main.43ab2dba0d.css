@@ -1,0 +1,48 @@
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main.scss ***!
+  \**************************************************************************************************************************************************/
+html {
+  font-size: 1rem;
+  color: rgb(146, 0, 17);
+  color: color(display-p3 0.54534 0.00000 0.06183);
+  font-family: "Roboto";
+}
+
+.h1 {
+  color: red;
+}
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/fonts/fonts.scss ***!
+  \*********************************************************************************************************************************************************/
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(images\roboto-v30-latin_cyrillic-regular.8b69ee54211f54dd21e3.eot); /* IE9 Compat Modes */
+  src: local(""), url(images\roboto-v30-latin_cyrillic-regular.8b69ee54211f54dd21e3.eot?#iefix) format("embedded-opentype"), url(images\roboto-v30-latin_cyrillic-regular.4fffc5153fbed09f129b.woff2) format("woff2"), url(images\roboto-v30-latin_cyrillic-regular.f80311e1d67029198330.woff) format("woff"), url(images\roboto-v30-latin_cyrillic-regular.c683a5d9c6b9d34a2466.ttf) format("truetype"), url(icons\roboto-v30-latin_cyrillic-regular.4f862c8ba4ed785461ee.svg#Roboto) format("svg"); /* Legacy iOS */
+}
+/* roboto-italic - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url(images\roboto-v30-latin_cyrillic-italic.61be7710390ae3e6da9c.eot); /* IE9 Compat Modes */
+  src: local(""), url(images\roboto-v30-latin_cyrillic-italic.61be7710390ae3e6da9c.eot?#iefix) format("embedded-opentype"), url(images\roboto-v30-latin_cyrillic-italic.2added54ff061f8125e1.woff2) format("woff2"), url(images\roboto-v30-latin_cyrillic-italic.65155c94ce93c92d614d.woff) format("woff"), url(images\roboto-v30-latin_cyrillic-italic.60f41fc6ec57fa88f86b.ttf) format("truetype"), url(icons\roboto-v30-latin_cyrillic-italic.5b35ce29664d4b37d611.svg#Roboto) format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(images\roboto-v30-latin_cyrillic-700.c00e013f6144276ea0b0.eot); /* IE9 Compat Modes */
+  src: local(""), url(images\roboto-v30-latin_cyrillic-700.c00e013f6144276ea0b0.eot?#iefix) format("embedded-opentype"), url(images\roboto-v30-latin_cyrillic-700.a3f18f14e8ed9cc1f976.woff2) format("woff2"), url(images\roboto-v30-latin_cyrillic-700.7bd45dae328c719f7559.woff) format("woff"), url(images\roboto-v30-latin_cyrillic-700.bee6b7adf6ef26cec655.ttf) format("truetype"), url(icons\roboto-v30-latin_cyrillic-700.9cc0e6124996a8989420.svg#Roboto) format("svg"); /* Legacy iOS */
+}
+/* roboto-700italic - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url(images\roboto-v30-latin_cyrillic-700italic.290def8853159b695702.eot); /* IE9 Compat Modes */
+  src: local(""), url(images\roboto-v30-latin_cyrillic-700italic.290def8853159b695702.eot?#iefix) format("embedded-opentype"), url(images\roboto-v30-latin_cyrillic-700italic.b28183e49a74864847a7.woff2) format("woff2"), url(images\roboto-v30-latin_cyrillic-700italic.03f374f696bf2c239030.woff) format("woff"), url(images\roboto-v30-latin_cyrillic-700italic.224c0d86e7817a734762.ttf) format("truetype"), url(icons\roboto-v30-latin_cyrillic-700italic.ea7a3036ad9539366729.svg#Roboto) format("svg"); /* Legacy iOS */
+}
