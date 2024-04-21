@@ -1,6 +1,9 @@
-import { useEffect, useState } from 'react'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
-export default function useDarkMode() {
+export default function useDarkMode(): [
+  string,
+  Dispatch<SetStateAction<string>>
+] {
   const preferDarkQuery = '(prefers-color-scheme: dark)'
   const [mode, setMode] = useState('')
 
@@ -26,6 +29,9 @@ export default function useDarkMode() {
         }
       }
     }
+
+    handleChange()
+
     mediaQuery.addEventListener('change', handleChange)
 
     return () => mediaQuery.removeEventListener('change', handleChange)
@@ -35,7 +41,8 @@ export default function useDarkMode() {
     if (mode === 'dark') {
       window.localStorage.setItem('theme', 'dark')
       document.documentElement.classList.add('dark')
-    } else {
+    }
+    if (mode === 'light') {
       window.localStorage.setItem('theme', 'light')
       document.documentElement.classList.remove('dark')
     }
