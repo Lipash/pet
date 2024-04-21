@@ -9,7 +9,7 @@ export default function Menu(prop: Tailwind) {
       <Link href="./">Home</Link>
       <Link href="./about">About</Link>
       <Link href={'./'}>
-        <GitLogo className="w-8 h-8" />
+        <GitLogo className="" />
       </Link>
       <LigthDarkMode />
     </div>

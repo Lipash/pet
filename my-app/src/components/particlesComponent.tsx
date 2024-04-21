@@ -72,14 +72,14 @@ const ParticlesContainer = () => {
           color: '#f07c23',
           distance: 150,
           enable: true,
-          opacity: 0.5,
-          width: 2,
+          opacity: 1,
+          width: 3,
         },
         collisions: {
           enable: true,
         },
         move: {
-          direction: 'center',
+          direction: 'none',
           enable: true,
           outModes: {
             default: 'bounce',

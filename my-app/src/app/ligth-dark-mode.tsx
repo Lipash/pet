@@ -8,14 +8,10 @@ export default function LigthDarkMode() {
   return (
     <>
       <button
-        className="h-8 w-8"
+        className="h-10 w-10"
         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
       >
-        {mode === 'dark' ? (
-          <SunIcon className="fill-dark" />
-        ) : (
-          <MoonIcon className="fill-dark" />
-        )}
+        {mode === 'dark' ? <SunIcon className="" /> : <MoonIcon className="" />}
       </button>
     </>
   )
