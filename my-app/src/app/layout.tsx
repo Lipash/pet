@@ -1,5 +1,7 @@
+import { ThemeProvider } from '@/components/themeProvider'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
+import Header from './header'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -18,10 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.className} dark:*:bg-dark dark:*:text-[white]`}
-      >
-        {children}
+      <body className={`${montserrat.className} `}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

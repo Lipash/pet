@@ -14,6 +14,7 @@ const config: Config = {
       yellowText: '#f2ac34',
       orangeText: '#e96d2e',
       greyText: '#1f1f1f',
+      blueButton: '#107a9f',
     },
     extend: {
       fontFamily: {
