@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Tailwind from '@/api/TailwindInterface'
 import ParticlesContainer from '@/components/particlesComponent'
-import Link from 'next/link'
 import AnimatedText from '@/components/animatedText'
 import AnimatedDiviInLine from '@/components/animatedDiviInLine'
+import ContactModalButton from '@/components/contactModalButton'
 
 export default function Body(prop: Tailwind) {
   return (
@@ -38,12 +38,12 @@ export default function Body(prop: Tailwind) {
         initial={{ x: '-100vw', opacity: 0 }}
         className="sm:flex sm:flex-col sm:row-span-1 sm:col-span-6 text-2xl sm:items-center xl:row-span-2 gap-20 dark:bg-greyText"
       >
-        <Link
-          href={'./'}
-          className="z-10 bg-blueButton dark:bg-orangeText text-white dark:text-greyText p-5 px-10 rounded-lg text lg font semibolt hover:bg-white hover:text-orangeText hover:dark:bg-greyText border-2 border-solid border-transparent"
-        >
-          Contact
-        </Link>
+        <ContactModalButton />
+        {/* <LinkModal
+          title="Contact"
+          href="?modal=true"
+          className=" bg-blueButton dark:bg-orangeText text-white dark:text-greyText p-5 px-10 rounded-lg text lg font semibolt hover:bg-white hover:text-orangeText hover:dark:bg-greyText border-2 border-solid border-transparent"
+        ></LinkModal> */}
       </AnimatedDiviInLine>
     </div>
   )

@@ -9,10 +9,10 @@ export default function TransitionPageEffect({
 }) {
   const pathName = usePathname()
   return (
-    <>
+    <div>
       <AnimatePresence mode="wait">
         <motion.div
-          className="fixed top-0 bottom-0 right-full h-screen z-40 bg-orangeText"
+          className="fixed top-0 bottom-0 right-full h-screen z-50 bg-orangeText"
           key={'1'}
           initial={{ x: '100%', width: '100%' }}
           animate={{ x: '0%', width: '0%' }}
@@ -20,14 +20,14 @@ export default function TransitionPageEffect({
           exit={{ x: ['0%', '100%'] }}
         ></motion.div>
         <motion.div
-          className="fixed top-0 bottom-0 right-full w-screan h-screen z-30 bg-yellowText"
+          className="fixed top-0 bottom-0 right-full w-screan h-screen z-40 bg-yellowText"
           key={'2'}
           initial={{ x: '100%', width: '100%' }}
           animate={{ x: '0%', width: '0%' }}
           transition={{ delay: 0.4, duration: 0.6, ease: 'easeInOut' }}
         ></motion.div>
         <motion.div
-          className="fixed top-0 bottom-0 right-full w-screan h-screen z-20 bg-dark"
+          className="fixed top-0 bottom-0 right-full w-screan h-screen z-30 bg-dark"
           key={'3'}
           initial={{ x: '100%', width: '100%' }}
           animate={{ x: '0%', width: '0%' }}
@@ -35,6 +35,6 @@ export default function TransitionPageEffect({
         ></motion.div>
         {children}
       </AnimatePresence>
-    </>
+    </div>
   )
 }

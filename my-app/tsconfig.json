@@ -27,7 +27,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "public/moonIcon.js",
-    "public/sunIcon.js"
+    "public/sunIcon.js",
+    "src/components/modal/test.jsx",
+    "src/components/modal.js",
+    "src/components/modals.js"
   ],
   "exclude": ["node_modules"]
 }
