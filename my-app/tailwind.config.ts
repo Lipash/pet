@@ -15,6 +15,7 @@ const config: Config = {
       orangeText: '#e96d2e',
       greyText: '#1f1f1f',
       blueButton: '#107a9f',
+      red: '#ff1d1d',
     },
     extend: {
       fontFamily: {

@@ -3,7 +3,7 @@ import Tailwind from '@/api/TailwindInterface'
 import ParticlesContainer from '@/components/particlesComponent'
 import AnimatedText from '@/components/animatedText'
 import AnimatedDiviInLine from '@/components/animatedDiviInLine'
-import ContactModalButton from '@/components/contactModalButton'
+import ContactModalButton from '@/app/api/contactModalButton'
 
 export default function Body(prop: Tailwind) {
   return (
@@ -39,11 +39,6 @@ export default function Body(prop: Tailwind) {
         className="sm:flex sm:flex-col sm:row-span-1 sm:col-span-6 text-2xl sm:items-center xl:row-span-2 gap-20 dark:bg-greyText"
       >
         <ContactModalButton />
-        {/* <LinkModal
-          title="Contact"
-          href="?modal=true"
-          className=" bg-blueButton dark:bg-orangeText text-white dark:text-greyText p-5 px-10 rounded-lg text lg font semibolt hover:bg-white hover:text-orangeText hover:dark:bg-greyText border-2 border-solid border-transparent"
-        ></LinkModal> */}
       </AnimatedDiviInLine>
     </div>
   )

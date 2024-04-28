@@ -30,7 +30,8 @@
     "public/sunIcon.js",
     "src/components/modal/test.jsx",
     "src/components/modal.js",
-    "src/components/modals.js"
+    "src/components/modals.js",
+    "src/app/api/modal.jsx"
   ],
   "exclude": ["node_modules"]
 }
