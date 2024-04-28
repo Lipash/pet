@@ -34,9 +34,9 @@ export default function Modal({
       <div className={`${className} flex flex-col`}>
         {children}
 
-        <div className="flex gap-12 mt-auto">
+        <div className="flex gap-12 mt-auto pt-3">
           <button
-            className="bg-red rounded-lg p-2 px-5 text-2xl"
+            className="bg-red rounded-lg p-2 px-5 text-2xl border-2"
             onClick={(e) => {
               e.preventDefault()
               onClose(true)
@@ -45,7 +45,7 @@ export default function Modal({
             Close
           </button>
           <button
-            className="bg-blueButton p-2 px-5 rounded-lg text-2xl"
+            className="bg-blueButton p-2 px-5 rounded-lg text-2xl border-2"
             onClick={onSubmit}
           >
             Send

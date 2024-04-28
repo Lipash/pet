@@ -1,10 +1,11 @@
 'use client'
 
-import { DevTool } from '@hookform/devtools'
+// import { DevTool } from '@hookform/devtools'
 import { useState } from 'react'
-import Modal from './modal'
+
 import { useForm } from 'react-hook-form'
 import sendMail from './sendEmail'
+import Modal from './modal'
 
 function ContactModalButton() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -40,10 +41,10 @@ function ContactModalButton() {
   }
 
   return (
-    <div>
+    <div className="z-10 pt-2">
       <button
         onClick={handleOpenModal}
-        className=" bg-blueButton dark:bg-orangeText text-white dark:text-greyText p-5 px-10 rounded-lg text-lg font semibolt hover:bg-white hover:text-orangeText hover:dark:bg-greyText border-2 border-solid border-transparent"
+        className="bg-blueButton dark:bg-orangeText text-white dark:text-greyText p-5 px-10 rounded-lg text-lg font-semibold hover:bg-white hover:text-orangeText hover:dark:bg-greyText border-2 border-solid border-transparent"
       >
         Contact
       </button>
@@ -52,11 +53,11 @@ function ContactModalButton() {
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         onSubmit={handleSubmit(onSubmit)}
-        className="inline-block m-4 relative z-50 p-5 min-h-80 min-w-80 items-center rounded-2xl bg-orangeText border-2 dark:border-yellowText shadow-xl"
+        className="inline-block m-4 relative z-50 p-5 min-h-80 min-w-80 items-center rounded-2xl bg-orangeText border-2 shadow-xl text-4xl"
       >
         <h1>Contact with me</h1>
         <form
-          className="flex flex-col justify-center bg-yellowText gap-1 rounded-lg p-2 px-5 text-lg"
+          className="flex flex-col justify-center  gap-1 rounded-lg text-lg"
           noValidate
         >
           <label htmlFor="u cnotacts"></label>

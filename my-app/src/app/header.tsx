@@ -15,7 +15,7 @@ export default function Header(prop: Tailwind) {
       <CustomLink
         href="/about"
         title="About"
-        spanClassName="bg-dark dark:bg-white"
+        spanClassName=" bg-dark dark:bg-white"
       ></CustomLink>
       <Link href={'./'}>
         <GitLogo className="w-8 h-8" />
