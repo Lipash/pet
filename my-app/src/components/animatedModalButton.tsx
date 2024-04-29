@@ -1,29 +1,14 @@
 'use client'
 
 import { AnimationProps, motion } from 'framer-motion'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
 interface AnimatedModalProps extends AnimationProps {
   className: string
   children: React.ReactNode
   scale: number
-  isModalOpen: boolean
 }
 
 export default function AnimatedModalButton(prop: AnimatedModalProps) {
-  const [animation, setAnimation] = useState({})
-
-  useEffect(() => {
-    if (prop.isModalOpen) {
-      setAnimation({})
-    } else {
-      setAnimation({
-        scale: prop.scale,
-        transition: { delay: 0 },
-      })
-    }
-  }, [prop.isModalOpen, prop.scale])
-
   return (
     <motion.div
       className={prop.className}

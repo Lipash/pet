@@ -32,12 +32,12 @@ export default function Modal({
       onClick={handleOutsideClick}
       className="z-40 backdrop-blur fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-[rgba(0, 0, 0, 0.5)] text-greyText"
     >
-      <div className={`${className} flex flex-col`}>
+      <div className={`${className}`}>
         {children}
 
-        <div className="flex gap-12 mt-auto pt-3">
+        <div className="flex mt-auto w-full justify-between 2xl:px-16 2xl:pb-6 xl:px-4 pt-3 xl:pb-3 2xl:pt-10 flex-col xl:flex-row">
           <button
-            className="bg-red rounded-lg p-2 px-5 text-2xl border-2"
+            className="bg-red p-3 px-16 rounded-2xl text-2xl text-white"
             onClick={(e) => {
               e.preventDefault()
               onClose(true)
@@ -46,7 +46,7 @@ export default function Modal({
             Close
           </button>
           <button
-            className="bg-blueButton p-2 px-5 rounded-lg text-2xl border-2"
+            className="bg-blueButton p-3 px-16 rounded-2xl text-2xl text-white"
             onClick={onSubmit}
           >
             Send

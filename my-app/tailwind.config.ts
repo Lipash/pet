@@ -18,6 +18,9 @@ const config: Config = {
       red: '#ff1d1d',
     },
     extend: {
+      borderWidth: {
+        underline: '0 0 1px 0',
+      },
       fontFamily: {
         sans: ['var(--font-montserrat)'],
       },
