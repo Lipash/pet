@@ -22,9 +22,10 @@ const config: Config = {
         sans: ['var(--font-montserrat)'],
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        buttonOrangeGradient:
+          'linear-gradient(to right, #e96d2e 0%, #e0971c  51%, #ff9232  100%)',
+        darkButtonOrangeGradient:
+          'linear-gradient(to right, #e0971c 0%, #e96d2e  51%, #e0971c  100%)',
       },
     },
   },

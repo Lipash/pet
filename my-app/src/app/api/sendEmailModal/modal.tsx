@@ -28,6 +28,7 @@ export default function Modal({
 
   return (
     <div
+      id="modal"
       onClick={handleOutsideClick}
       className="z-40 backdrop-blur fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-[rgba(0, 0, 0, 0.5)] text-greyText"
     >

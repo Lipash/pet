@@ -6,8 +6,9 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import sendMail from './sendEmail'
 import Modal from './modal'
+import AnimatedModalButton from '@/components/animatedModalButton'
 
-function ContactModalButton() {
+function ContactModalButton({ className }: { className: string }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleOpenModal = () => {
@@ -21,7 +22,7 @@ function ContactModalButton() {
   const form = useForm<FormValues>()
   const {
     register,
-    control,
+    // control,
     handleSubmit,
     formState: { errors },
   } = form
@@ -32,23 +33,37 @@ function ContactModalButton() {
   }
 
   const onSubmit = (data: FormValues) => {
-    console.log(data)
     sendMail(data.email, data.message)
-    console.log(
-      process.env.NEXT_PUBLIC_SMTP_EMAIL,
-      process.env.NEXT_PUBLIC_SMTP_PASSWORD
-    )
   }
 
   return (
-    <div className="z-10 pt-2">
-      <button
-        onClick={handleOpenModal}
-        className="bg-blueButton dark:bg-orangeText text-white dark:text-greyText p-5 px-10 rounded-lg text-lg font-semibold hover:bg-white hover:text-orangeText hover:dark:bg-greyText border-2 border-solid border-transparent"
+    <div className={className}>
+      <AnimatedModalButton
+        isModalOpen={isModalOpen}
+        // setIsModalOpen={setIsModalOpen}
+        // handleCloseModal={handleCloseModal}
+        scale={1.2}
+        initial={{ x: '-100vw', opacity: 0 }}
+        className="flex flex-col row-span-1 col-span-6 text-2xl items-center xl:row-span-2 gap-20 dark:bg-greyText"
       >
-        Contact
-      </button>
-
+        <button
+          onClick={handleOpenModal}
+          className=" bg-buttonOrangeGradient dark:bg-darkButtonOrangeGradient m-[10px] px-10 py-5 text-center uppercase transi duration-500 bg-auto text-white shadow-lg block rounded-xl"
+          // dark:bg-orangeText text-white dark:text-greyText hover:bg-white hover:text-orangeText hover:dark:bg-greyText p-5 px-10 rounded-lg text-lg font-semibold  border-2 border-solid border-transparent
+          // margin: 10px;
+          // padding: 15px 45px;
+          // text-align: center;
+          // text-transform: uppercase;
+          // transition: 0.5s;
+          // background-size: 200% auto;
+          // color: white;
+          // box-shadow: 0 0 20px #eee;
+          // border-radius: 10px;
+          // display: block;
+        >
+          Contact
+        </button>
+      </AnimatedModalButton>
       <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}

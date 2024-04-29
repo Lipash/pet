@@ -109,7 +109,7 @@ const ParticlesContainer = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="hidden sm:flex"
+        className="hidden sm:flex "
       />
     )
   }
