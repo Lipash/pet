@@ -61,23 +61,27 @@ export default function Skills(prop: Tailwind) {
       <ParticlesContainer />
       <motion.div className="flex flex-col gap-5 ">
         <div className="items-center flex justify-center text-4xl font-semibold">
-          Skills
+          Skills:
         </div>
         <SkillsDiv skill="HTML" delay={1} />
         <SkillsDiv skill="CSS" delay={1.1} />
         <SkillsDiv skill="JS" delay={1.2} />
         <SkillsDiv skill="React" delay={1.3} />
         <SkillsDiv skill="Next" delay={1.4} />
+        <SkillsDiv skill="Git" delay={1.5} />
+        <SkillsDiv skill="Docker" delay={1.6} />
       </motion.div>
       <motion.div className="flex flex-col  z-0 items-center justify-center gap-5 w-2/3">
         <div className="items-center flex justify-center text-4xl font-semibold">
-          FAQ
+          Development plans:
         </div>
-        <FaqDiv skill="loren10" delay={1.4} />
-        <FaqDiv skill="loren10" delay={1.3} />
-        <FaqDiv skill="loren10" delay={1.2} />
-        <FaqDiv skill="loren10" delay={1.1} />
-        <FaqDiv skill="loren10" delay={1} />
+        <FaqDiv
+          skill="Develop a high-performance application with data processing from the backend"
+          delay={1.3}
+        />
+        <FaqDiv skill="Improve understanding of react and next" delay={1.2} />
+        <FaqDiv skill="Learn Nodejs basics" delay={1.1} />
+        <FaqDiv skill="Raise my English level to B1-B2" delay={1} />
       </motion.div>
     </div>
   )

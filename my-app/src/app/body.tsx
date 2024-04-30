@@ -13,14 +13,11 @@ export default function Body(prop: Tailwind) {
       <div className="dark:bg-greyText text-left sm:row-span-9 sm:col-span-6 sm:flex sm:flex-col sm:justify-center xl:row-span-8 2xl:pl-32">
         <ParticlesContainer />
         <AnimatedText
-          text="OTTER DEVELOPMENT"
+          text="Frontend developer"
           className="bg-white dark:bg-greyText font-black sl:text-5xl text-4xl lg:text-9xl text-orangeText break-words p-2 whitespace-break-spaces"
         />
         <AnimatedText
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          assumenda aut excepturi voluptate, voluptates sint quas, quis placeat
-          eaque amet tempore quisquam voluptas rem dolore ex, et fugiat libero.
-          Aliquam!"
+          text="I specialize in creating modern web applications using Next.js and TypeScript. My skills include developing responsive interfaces and continuous self-improvement in the field of IT technologies"
           className="bg-white z-10 dark:bg-greyText text-2xl md:text-3xl lg:text-4xl text-greyText dark:text-[white] 2xl:pt-32 p-2"
         ></AnimatedText>
       </div>
