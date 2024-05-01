@@ -17,7 +17,7 @@ export default function Header(prop: Tailwind) {
         title="About"
         spanClassName=" bg-dark dark:bg-white"
       ></CustomLink>
-      <Link href={'./'}>
+      <Link href={'https://github.com/Lipash'}>
         <GitLogo className="w-8 h-8" />
       </Link>
       <ThemeToggle />

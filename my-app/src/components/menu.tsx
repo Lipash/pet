@@ -6,13 +6,9 @@ import Image from 'next/image'
 export default function Menu(prop: Tailwind) {
   return (
     <div className={prop.className}>
-      <Link href="./">Home</Link>
-      <Link href="./about">About</Link>
-      <a
-        href="https://github.com/Lipash"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link href="">Home</Link>
+      <Link href="">About</Link>
+      <a href="" target="_blank" rel="noopener noreferrer">
         <Image src={GitLogo} alt="GitHub Logo" width={50} height={50} />
       </a>
     </div>
