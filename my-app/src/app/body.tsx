@@ -3,9 +3,7 @@ import Tailwind from '@/api/TailwindInterface'
 import ParticlesContainer from '@/components/particlesComponent'
 import AnimatedText from '@/components/animatedText'
 import AnimatedDiviInLine from '@/components/animatedDiviInLine'
-
 import ContactModalButton from './api/sendEmailModal/contactModalButton'
-import AnimatedModalButton from '@/components/animatedModalButton'
 
 export default function Body(prop: Tailwind) {
   return (
@@ -14,7 +12,7 @@ export default function Body(prop: Tailwind) {
         <ParticlesContainer />
         <AnimatedText
           text="Frontend developer"
-          className="bg-white dark:bg-greyText font-black sl:text-5xl text-4xl lg:text-9xl text-orangeText break-words p-2 whitespace-break-spaces"
+          className="bg-white dark:bg-greyText font-black sl:text-5xl text-4xl lg:text-7xl xl:text-8xl text-orangeText break-words p-2 whitespace-break-spaces text-balance"
         />
         <AnimatedText
           text="I specialize in creating modern web applications using Next.js and TypeScript. My skills include developing responsive interfaces and continuous self-improvement in the field of IT technologies"
@@ -27,19 +25,15 @@ export default function Body(prop: Tailwind) {
       >
         <Image
           src="/avatar-2.png"
-          width={700}
+          width={500}
           height={500}
-          alt="Avatar.jgp"
-          className="scale-x-[-1]"
+          priority
+          alt="Avatar.jpg"
+          className="scale-x-[-1] custom-img max-h-full"
         />
       </AnimatedDiviInLine>
-      {/* <AnimatedModalButton
-        scale={1.2}
-        initial={{ x: '-100vw', opacity: 0 }}
-        className="flex flex-col row-span-1 col-span-6 text-2xl items-center xl:row-span-2 gap-20 dark:bg-greyText z-10 pt-2"
-      > */}
+
       <ContactModalButton className="flex flex-col row-span-1 col-span-6 text-2xl items-center xl:row-span-2 gap-20 dark:bg-greyText z-10 pt-2" />
-      {/* </AnimatedModalButton> */}
     </div>
   )
 }

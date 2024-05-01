@@ -32,8 +32,26 @@ function ContactModalButton({ className }: { className: string }) {
     message: string
   }
 
+  const isValid = (data: FormValues) => {
+    if (!data.email || !data.message) {
+      return false
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(data.email)) {
+      return false
+    }
+
+    return true
+  }
+
   const onSubmit = (data: FormValues) => {
-    sendMail(data.email, data.message)
+    if (isValid(data)) {
+      sendMail(data.email, data.message)
+      handleCloseModal()
+    } else {
+      return
+    }
   }
 
   return (

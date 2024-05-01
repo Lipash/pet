@@ -10,7 +10,7 @@ export default function TransitionPageEffect({
   const pathName = usePathname()
   return (
     <div>
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.div
           className="fixed top-0 bottom-0 right-full h-screen z-50 bg-orangeText"
           key={'1'}

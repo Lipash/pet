@@ -21,7 +21,7 @@ function SkillsDiv({ skill, delay }: { skill: string; delay: number }) {
       variants={quote}
       initial="initial"
       animate="animate"
-      className=" dark:bg-orangeText bg-blueButton text-2xl md:text-3xl lg:text-4xl p-10  rounded-2xl flex justify-center z-10"
+      className=" dark:bg-orangeText bg-blueButton text-2xl md:text-3xl lg:text-4xl p-10 rounded-2xl flex justify-center z-10 w-full"
       whileHover={{ scale: 1.1 }}
     >
       {skill}
@@ -48,7 +48,7 @@ function FaqDiv({ skill, delay }: { skill: string; delay: number }) {
       variants={quote}
       initial="initial"
       animate="animate"
-      className=" bg-orangeText dark:bg-blueButton w-2/3 text-2xl md:text-3xl lg:text-4xl p-10  rounded-2xl flex justify-center z-10"
+      className="bg-orangeText dark:bg-blueButton w-full lg:w-2/3 text-2xl md:text-3xl lg:text-4xl p-10 rounded-2xl flex justify-center z-10"
     >
       {skill}
     </motion.div>
@@ -59,7 +59,7 @@ export default function Skills(prop: Tailwind) {
   return (
     <div className={prop.className}>
       <ParticlesContainer />
-      <motion.div className="flex flex-col gap-5 ">
+      <motion.div className="flex flex-col gap-5 w-8/12 sm:w-2/12">
         <div className="items-center flex justify-center text-4xl font-semibold">
           Skills:
         </div>
